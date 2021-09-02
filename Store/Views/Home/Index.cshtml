@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container">
+
+    <div class="jumbotron-fluid">
+        <h1 class="display-4">Bartender App MVC</h1>
+    </div>
+
+    <div class="card mt-lg-3">
+        <div class="card-header">
+            Choose the cocktail menu to Order drinks
+        </div>
+        <div class="card-body">
+            <a class="btn btn-warning" asp-controller="Product" asp-action="List">View Menu</a>
+        </div>
+    </div>
+
+    <div class="card mt-lg-3">
+        <div class="card-header">
+            <p>Bartenders, View the drink queue here</p>
+        </div>
+        <div class="card-body">
+            <a class="btn btn-primary" asp-controller="Order" asp-action="List">View Drink queue</a>
+        </div>
+    </div>
+
+    <div class="card mt-sm-3">
+        <div class="card-body">
+            <p class="text-muted">I have No Authorization in this solution</p>
+        </div>
+    </div>
+
+</div>
